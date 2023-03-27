@@ -1,0 +1,271 @@
+html {
+   box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+   box-sizing: inherit;
+}
+
+body {
+   min-width: 320px;
+   font-family: Arial, Open Sans, sans-serif;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 15px;
+   line-height: 160%;
+   color: #4C4C4C;
+   background-size: cover;
+   margin: 0 auto;
+}
+
+.wrapper_horizontal {
+   max-width: 1280px;
+   padding: 0 40px;
+   margin: 0 auto;
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+   .wrapper_horizontal {
+   max-width: 768px;
+   padding: 0 30px;
+   color: "Foo " + Bar;
+   }
+}
+
+.wrapper_vertical {
+   padding-top: 80px;
+   padding-bottom: 100px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+   font-family: Georgia, Merrriweather, serif;
+   font-style: normal;
+   font-weight: 400;
+   letter-spacing: 0.06em;
+}
+
+h1 {
+   font-size: 32px;
+   line-height: 110%;
+}
+
+h2 {
+   font-size: 44px;
+   line-height: 130%;
+}
+
+h3 {
+   font-size: 35px;
+   line-height: 128%;
+}
+
+.h3_dark {
+   color: #545454;
+}
+
+.h3_white {
+   color: #FFFFFF;
+}
+
+.h3_center {
+   text-align: center;
+}
+
+.h3_left {
+   text-align: left;
+}
+
+h4 {
+   font-size: 20px;
+   line-height: 115%;
+}
+
+h5 {
+   font-size: 15px;
+   line-height: 110%;
+}
+
+img {
+   max-width: 100%;
+   height: auto;
+   object-fit: contain;
+}
+
+// BUTTONS ====================================================================
+
+.button_primary {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   font-family: Georgia, Merrriweather, serif;
+   font-size: 17px;
+   letter-spacing: 0.06em;
+   white-space: normal;
+   border: 2px solid #F1CDB3;
+   border-radius: 100px;
+   color: #292929;
+   background: 0;
+}
+
+.button_oval {
+   padding: 14px 43px;
+   gap: 10px;
+}
+
+.button_round {
+   width: 52px;
+   height: 52px;
+   font-size: 20px;
+   line-height: 23px;
+}
+
+.button_fullcolor {
+   background: #F1CDB3;
+}
+
+.button_fade {
+   border-color: #CDCDCD;
+}
+
+.button_text_fade {
+   color: #CDCDCD;
+}
+
+// HEADER ====================================================================
+
+.header_wrapper {
+   display: flex;
+   flex-wrap: nowrap;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.header_logo {
+   text-align: center;
+}
+.header_logo_link {
+   text-decoration: none;
+}
+
+.header_nav_list {
+	display: flex;
+	flex-wrap: nowrap;
+   align-items: center;
+   padding-bottom: 5px;
+   gap: 36px;
+}
+
+// CARD =================================================================
+
+.card {
+   width: 270px;
+   height: 435px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background: #FAFAFA;
+   border-radius: 9px;
+}
+
+.card_photo,
+.card_name,
+.card_button {
+   margin-bottom: 30px;
+}
+
+.card_name {
+   font-family: Georgia, Merrriweather, serif;
+   font-size: 20px;
+   text-align: center;
+   line-height: 23px;
+   letter-spacing: 0.06em;
+   color: #545454;
+}
+
+.card_button_text {
+   flex-wrap: nowrap;
+   font-family: Georgia, Merrriweather, serif;
+   font-size: 17px;
+   line-height: 120%;
+   color: #292929;
+}
+
+.card_button {
+ //  width: 188px;
+}
+
+// FOOTER =================================================================
+
+.footer {
+ //  max-height: 350px;
+   background-color: #211F20;
+   background-image: linear-gradient(to bottom right, #513D2F, #1A1A1C);
+}
+
+h4 {
+   color: #F1CDB3;
+}
+
+.footer_wrapper {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   object-fit: contain;
+   justify-content: space-between;
+}
+
+.footer_text {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   column-gap: 160px;
+   justify-content: space-between;
+   margin: 56px 0 60px;
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+      .footer_text {
+      column-gap: 60px;
+      margin: 30px 34px 0;
+      }
+   }
+
+.footer_contacts,
+.footer_locations {
+   display: flex;
+   flex-direction: column;
+   flex-wrap: nowrap;
+   justify-content: space-between;
+}
+
+.footer_contacts {
+   row-gap: 40px;
+}
+
+.footer_locations {
+   row-gap: 30px;
+}
+
+.footer_contact_detail {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   object-fit: contain;
+   gap: 20px;
+}
+
+.footer_image {
+   padding-top: 40px;
+   object-fit: contain;
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+   .footer_image {
+      padding-top: 65px;
+      margin: 0 auto;
+   }
+}
