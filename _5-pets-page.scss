@@ -1,0 +1,64 @@
+
+// HEADER ================================================================
+
+.pets_header {
+   margin-top: 30px;
+   margin-bottom: 30px;
+   background-color: #fff;
+}
+
+.pets-header-h1 {
+      color: #545454;
+     // margin: 0 10px 0 0;
+   }
+
+.pets-header-p {
+      font-size: 13px;
+      line-height: 15px;
+      letter-spacing: 0.1em;
+      margin: 10px 0 0 0;
+      color: #292929;
+   }
+
+.pets_nav_item {
+   color: #545454;
+   text-decoration: none;
+}
+      
+.pets_nav_hightlight {
+   border-bottom: 3px solid #F1CDB3;
+   padding-bottom: 3px;
+   color: #292929;
+}
+
+// OUR PETS =================================================================
+
+.pets_background {
+   max-height: 1342px;
+   margin: 0 auto;
+   background-color: #F6F6F6;
+}
+
+.pets_title {
+   position: relative;
+   margin-bottom: 60px;
+}
+
+.pets_slider {
+   display: grid;
+   grid-template-columns: repeat(4, auto);
+   grid-column-gap: 40px;
+   grid-row-gap: 30px;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 60px;
+}
+
+.pets_arrows {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+}
