@@ -18,6 +18,8 @@ body {
    color: #4C4C4C;
    background-size: cover;
    margin: 0 auto;
+scroll-behavior: smooth;
+	
 }
 
 .wrapper_horizontal {
@@ -113,6 +115,11 @@ img {
    background: 0;
 }
 
+.button-primary:hover {
+	background-color: #F1CDB3;
+}
+	
+
 .button_oval {
    padding: 14px 43px;
    gap: 10px;
@@ -171,6 +178,12 @@ img {
    align-items: center;
    background: #FAFAFA;
    border-radius: 9px;
+}
+
+.card:hover {
+  transform: scale(1.2); 
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 }
 
 .card_photo,
