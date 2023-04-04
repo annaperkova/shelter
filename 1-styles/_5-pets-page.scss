@@ -34,14 +34,25 @@
 // OUR PETS =================================================================
 
 .pets_background {
-   max-height: 1342px;
+ //  max-height: 1342px;
    margin: 0 auto;
    background-color: #F6F6F6;
 }
 
+
 .pets_title {
    position: relative;
    margin-bottom: 60px;
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+   .pets_title {
+      margin-bottom: 30px;
+   }
+}
+@media (max-width: 768px) {
+   .pets_title {
+      margin-bottom: 42px;
+   }
 }
 
 .pets_slider {
@@ -53,6 +64,40 @@
    align-items: center;
    margin-bottom: 60px;
 }
+@media (min-width: 1000px) and (max-width: 1279px) {
+   .pets_slider {
+      grid-template-columns: repeat(3, auto);
+      justify-content: center;
+   }
+}
+@media (min-width: 768px) and (max-width: 999px) {
+   .pets_slider {
+      grid-template-columns: repeat(2, auto);
+      justify-content: center;
+   }
+}
+@media (max-width: 767px) {
+   .pets_slider {
+      grid-template-columns: repeat(1, auto);
+      justify-content: center;
+   }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+   .pets_slider div:nth-child(7),
+   .pets_slider div:nth-child(8) {
+      display: none;
+   }
+}
+@media (max-width: 767px) {
+   .pets_slider div:nth-child(4),
+   .pets_slider div:nth-child(5),
+   .pets_slider div:nth-child(6),
+   .pets_slider div:nth-child(7),
+   .pets_slider div:nth-child(8) {
+      display: none;
+   }
+}
 
 .pets_arrows {
    display: flex;
@@ -61,4 +106,15 @@
    justify-content: center;
    align-items: center;
    gap: 20px;
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+   .pets_arrows {
+      margin: -20px 0 -25px;
+   }
+}
+@media (max-width: 767px) {
+   .pets_arrows {
+      margin-top: -20px;
+      gap: 10px;
+   }
 }
